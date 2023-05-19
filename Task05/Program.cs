@@ -7,9 +7,12 @@
 Console.WriteLine("Введите натуральное число");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number < 1) Console.Write("Неверное число!");
-else (int i = -number);
-while (i <= number)
+else 
 {
-    Console.Write($"{i} ");
-    int i+=1;
+    int i = -number;
+    while (i <= number)
+    {
+        Console.Write($"{i} ");
+        i +=1;
+    }
 }
