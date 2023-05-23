@@ -19,4 +19,4 @@ int num2 = Convert.ToInt32(Console.ReadLine());
 int myresult = DevidedWithoutRemainder(num1, num2);
 
 if (myresult == 0) Console.WriteLine("Первое число кратно второму");
-else Console.WriteLine("Первое число не кратно второму");
+else Console.WriteLine($"Первое число не кратно второму, остаток от деления -> {myresult}");
