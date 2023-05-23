@@ -5,8 +5,6 @@
 // 782 -> 72
 // 918 -> 98
 
-int number = new Random().Next(100, 1001);
-
 
 int removeSecondDigit(int num)
 {
@@ -15,6 +13,7 @@ int removeSecondDigit(int num)
     int result = firstDigit * 10 + thirdDigit;
     return result;
 }
+int number = new Random().Next(100, 1001);
 int newNum = removeSecondDigit(number);
 Console.WriteLine($"Случайное трехзначное число -> {number}");
 
