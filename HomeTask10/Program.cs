@@ -8,7 +8,7 @@ int WriteSecondDigitOfThree(int num)
    int result = (num %100)/10;
    return result;
 }
-Console.WriteLine("Введите трехзначное число число");
+Console.WriteLine("Введите трехзначное число");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number < 100 || number > 999) Console.WriteLine("Это не трехзнанчое число!");
 else 
