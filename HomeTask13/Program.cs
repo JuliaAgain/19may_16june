@@ -7,14 +7,13 @@ Console.WriteLine("Введите целое число");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number/100 == 0) 
 {
-    Console.WriteLine("У этого числа нет третьей циры!");
+     Console.WriteLine("У этого числа нет третьей циры!");
 }
 else
 {
-    while (number/100 > 0)
+    while (number > 999)
     {
-        int thirdDigit = number %10;
-        int number = number / 10;
+        number = number / 10;
     }
-    Console.WriteLine($"Третья цифра числа {number} -> {thirdDigit}");
+    Console.WriteLine($"Третья цифра числа {number} -> {number%10}");
 }
