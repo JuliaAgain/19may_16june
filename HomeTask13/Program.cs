@@ -11,7 +11,7 @@ if (number/100 == 0)
 }
 else
 {
-    while (number > 999)
+    while (number > 999 || number < -999)
     {
         number = number / 10;
     }
