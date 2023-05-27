@@ -1,0 +1,10 @@
+﻿Console.WriteLine("Введите пятизначное целое число.");
+int n = Convert.ToInt32(Console.ReadLine());
+int firstDigit = n / 10000;
+int secondDigit = (n / 1000) - firstDigit*10;
+int fifthDigit = n % 10;
+int fourthDigit = (n % 100)/10;
+Console.WriteLine(firstDigit);
+Console.WriteLine(secondDigit);
+Console.WriteLine(fourthDigit);
+Console.WriteLine(fifthDigit);
