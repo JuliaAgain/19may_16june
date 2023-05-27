@@ -16,5 +16,5 @@ string Coordinates(int q)
     if (q == 2) return "x < 0, y > 0";
     if (q == 3) return "x < 0, y < 0";
     if (q == 4) return "x > 0, y < 0";
-    return null;
+    return " ";
 }
