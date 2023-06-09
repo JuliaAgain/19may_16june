@@ -18,7 +18,10 @@ int Factorial(int num)
     int result = 1;
     for (int i = 1; i <= num; i++)
     {
-        result *= i;
+        checked 
+        {
+            result*=i;
+        }
     }
     return result;
 }
