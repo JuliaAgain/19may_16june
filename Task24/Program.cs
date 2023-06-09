@@ -6,7 +6,11 @@
 
 Console.WriteLine("Введите целое положительное число:");
 int number = Convert.ToInt32(Console.ReadLine());
-
+if (number <= 0)
+{
+    Console.WriteLine("Введено некорректное число!");
+    return;
+}
 int s = SumNumbers(number);
 Console.WriteLine($"Сумма чисел от 1 до {number} равна {s}.");
 
