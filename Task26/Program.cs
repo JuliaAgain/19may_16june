@@ -6,12 +6,17 @@
 int CountDigits(int n)
 {
     int digits = 0;
-     if (num == 0)
-     {
-        digits = 1;
-     }
-     e
+    if (n == 0) return 1;
+    while (n != 0)
+    {
+        digits++;
+        n /= 10;
     }
+    return digits;
+}
+Console.WriteLine("Введите число:");
+int num = Convert.ToInt32(Console.ReadLine());
 
+Console.WriteLine($"Число {num} содержит {CountDigits(num)} цифр.");
 
 
