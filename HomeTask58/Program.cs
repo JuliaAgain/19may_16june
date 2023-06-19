@@ -48,7 +48,7 @@ int[,] MatrixMultiplication(int[,] matrix1, int[,] matrix2) // c[i, j] = a[i,1]*
             }
             newMatrix[i, j] = sum;
         }
-        
+
     }
     return newMatrix;
 }
@@ -56,9 +56,14 @@ int[,] MatrixMultiplication(int[,] matrix1, int[,] matrix2) // c[i, j] = a[i,1]*
 int[,] array1 = CreateMatrixRndInt(3, 2, 0, 10);
 PrintMatrix(array1);
 Console.WriteLine();
-int[,] array2 = CreateMatrixRndInt(2, 5, 0, 10);
+int[,] array2 = CreateMatrixRndInt(2, 4, 0, 10);
 PrintMatrix(array2);
-
-int[,] newArray = MatrixMultiplication(array1, array2);
 Console.WriteLine();
-PrintMatrix(newArray);
+// число столбцов в первой матриц = числу строк во второй
+if (array1.GetLength(1) == array2.GetLength(0))
+{
+    int[,] newArray = MatrixMultiplication(array1, array2);
+    PrintMatrix(newArray);
+}
+else Console.WriteLine("Такие матрицы нельзя умножить друг на другу. Число столбцов в первой матрице должно быть равно числу строк во второй.");
+
