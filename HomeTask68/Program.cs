@@ -20,5 +20,8 @@ int Ackerman(int n, int m)
 Console.WriteLine("Введите два натуральных числа: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 int number2 = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine($"A(n, m) = {Ackerman(number1, number2)}");
+if (number1 < 0 || number2 < 0) Console.WriteLine("Некорректный ввод. Оба числа должны быть натуральными.");
+else
+{
+Console.WriteLine($"A(n,m) = {Ackerman(number1, number2)}");
+}
