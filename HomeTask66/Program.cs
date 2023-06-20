@@ -18,14 +18,11 @@ else if (number1 < number2)
     int result = SumNumbersInRange(number1, number2);
     Console.WriteLine($"Сумма натуральных чисел в интервале между {number1} и {number2} равна {result}");
 }
-else if (number1 > number2)
+else
 {
     int result = SumNumbersInRange(number2, number1);
     Console.WriteLine($"Сумму чисел в интервале между {number2} и {number1} равна {result}");
 }
-else if (number1 == number2)
-{
-    Console.WriteLine($"Сумму чисел в интервале между {number2} и {number1} равна {number1}");
-}
+
 
 
