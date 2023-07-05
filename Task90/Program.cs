@@ -17,10 +17,11 @@ string[] FillArray(int size)    // метод для заполнения мас
 
 void PrintArray(string[] arr, string sep = ",")  // метод для вывода массива
 {
+    Console.Write("[");
     for (int i = 0; i < arr.Length; i++)
     {
         if (i < arr.Length -1) Console.Write($"{arr[i]}, ");
-        else Console.Write($"{arr[i]}");
+        else Console.Write($"{arr[i]}]");
     }
 }
 
@@ -52,10 +53,11 @@ string[] FillNewShortArray(int size, string[] arr)    // метод для за�
 Console.WriteLine("Введите число элементов в массиве");
 int num = Convert.ToInt32(Console.ReadLine());
 string[] array = FillArray(num);
+Console.WriteLine("Исходный массив:");
 PrintArray(array);
 int newNum = CountNumElementsShorterThanThree(array);
 Console.WriteLine();
-Console.WriteLine(newNum);
+Console.WriteLine("Новый массив из элементов, длина которых <=3:");
 Console.WriteLine();
 string[] NewShortArray = FillNewShortArray(newNum, array);
 PrintArray(NewShortArray);
